@@ -6,7 +6,7 @@
     "Bruno Barbosa <bruno@barbosa.io>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/bruno-barbosa/pokedex-app",
+  "homepage": "https://github.com/bruno-barbosa/pokedex",
   "ignore": [
     "**/.*",
     "node_modules",

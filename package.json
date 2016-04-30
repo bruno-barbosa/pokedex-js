@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bruno-barbosa/pokedex-app.git"
+    "url": "git+https://github.com/bruno-barbosa/pokedex.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bruno-barbosa/pokedex-app/issues"
+    "url": "https://github.com/bruno-barbosa/pokedex/issues"
   },
-  "homepage": "https://github.com/bruno-barbosa/pokedex-app#readme",
+  "homepage": "https://github.com/bruno-barbosa/pokedex#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
     "bower": "^1.7.9",
