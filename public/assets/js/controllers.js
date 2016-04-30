@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('pokeApp')
+var app = angular.module('pokeApp');
 
 app.controller('homeCtrl', ['$q', '$scope', '$timeout', 'Pokemon',  function ($q, $scope, $timeout, Pokemon) {
 
@@ -54,7 +54,7 @@ app.controller('pokemonCtrl', function($scope, $state, Pokemon) {
     $scope.details = res.data;
     $scope.stats = res.data.stats;
   });
-})
+});
 
 app.filter('capitalize', function() {
   return function(str){
@@ -64,7 +64,7 @@ app.filter('capitalize', function() {
 
     return str.split(' ')
       .map(word => word[0].toUpperCase() + word.slice(1).toLowerCase() )
-      .join(' ')
+      .join(' ');
   };
 });
 
