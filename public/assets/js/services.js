@@ -1,5 +1,4 @@
 'use strict';
-
 var app = angular.module('pokeApp');
 
 app.service('Pokemon', function ($http) {
