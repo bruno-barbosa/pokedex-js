@@ -1,0 +1,29 @@
+{
+  "name": "pokedex-app",
+  "version": "1.0.0",
+  "description": "Pokemon Pokedex Wiki built with Express/Angular  Material",
+  "author": "Bruno Barbosa <bruno@barbosa.io>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "postinstall": "bower i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruno-barbosa/pokedex-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruno-barbosa/pokedex-app/issues"
+  },
+  "homepage": "https://github.com/bruno-barbosa/pokedex-app#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.9",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  }
+}

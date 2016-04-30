@@ -1,0 +1,40 @@
+<md-content layout="column" flex ng-controller="homeCtrl">
+
+  <md-card>
+    <md-toolbar class="md-table-toolbar md-default">
+      <div class="md-toolbar-tools">
+        <div flex></div>
+        <md-button class="md-icon-button" ng-click="loadStuff()">
+          <md-icon>refresh</md-icon>
+        </md-button>
+      </div>
+    </md-toolbar>
+    <div class="loader" data-loading><img src="/assets/images/loading.gif" /></div>
+    <md-table-container flex>
+      <table md-table ng-model="selected" md-progress="promise">
+        <thead md-head md-order="query.order">
+          <tr md-row>
+            <th md-column><span>ID</span></th>
+            <th md-column><span>Species Name</span></th>
+            <th md-column><span>Sprite</span></th>
+            <th md-column><span>View Pokemon</span></th>
+          </tr>
+        </thead>
+        <tbody md-body>
+          <tr md-row md-on-select="logItem" md-select="pokemon" md-auto-select="options.autoSelect" ng-repeat="pokemon in pokedex | filter: filter.search | limitTo: query.limit : (query.page -1) * query.limit track by $index">
+            <td md-cell>{{pokemon.entry_number}}</td>
+            <td md-cell>{{pokemon.pokemon_species.name | capitalize}}</td>
+            <td md-cell><img class="sprites" ng-src="http://pokeapi.co/media/img/{{pokemon.entry_number}}.png"></td>
+            <td md-cell>
+              <md-button class="md-fab md-mini" aria-label="Pokeball" ui-sref="pokemon({id: $index + 1})">
+                <md-icon md-svg-src="/assets/images/pokeball.svg"></md-icon>
+              </md-button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </md-table-container>
+
+    <md-table-pagination md-limit="query.limit" md-limit-options="[10, 50, 100]" md-page="query.page" md-total="721" md-page-select="options.pageSelect" md-boundary-links="options.boundaryLinks"></md-table-pagination>
+  </md-card>
+</md-content>

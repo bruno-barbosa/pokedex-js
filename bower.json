@@ -1,0 +1,23 @@
+{
+  "name": "pokedex-app",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Bruno Barbosa <bruno@barbosa.io>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bruno-barbosa/pokedex-app",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.0.8",
+    "angular-material-data-table": "^0.10.9",
+    "angular-ui-router": "^0.2.18"
+  }
+}
