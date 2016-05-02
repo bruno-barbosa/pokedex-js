@@ -26,7 +26,7 @@
             <td md-cell>{{pokemon.pokemon_species.name | capitalize}}</td>
             <td md-cell><img class="sprites" ng-src="http://pokeapi.co/media/img/{{pokemon.entry_number}}.png"></td>
             <td md-cell>
-              <md-button class="md-fab md-mini" aria-label="Pokeball" ui-sref="pokemon({id: $index + 1})">
+              <md-button class="md-fab md-mini" aria-label="Pokeball" ui-sref="pokemon({id: pokemon.entry_number})">
                 <md-icon md-svg-src="/assets/images/pokeball.svg"></md-icon>
               </md-button>
             </td>
